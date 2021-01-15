@@ -4,6 +4,8 @@ $color-primary-dark: #28b485;
 
 $color-gray-dark: #777;
 $color-white: #fff;
+$color-black: #000;
+
 *,
 *::after,
 *::before {
@@ -39,24 +41,24 @@ body {
   position: relative;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
 
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
+  &__logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+  }
 
-.header__logo {
-  height: 3.5rem;
-}
+  &__logo {
+    height: 3.5rem;
+  }
 
-.header__text-box {
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  &__text-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 }
 
 .heading-primary {
@@ -64,24 +66,24 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem;
-}
 
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
 
-  animation: fadeInLeft 1s ease-out;
-}
+    animation: fadeInLeft 1s ease-out;
+  }
 
-.heading-primary--sub {
-  display: block;
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 3.2rem;
+  &--sub {
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 3.2rem;
 
-  animation: fadeInRight 1s ease-out;
+    animation: fadeInRight 1s ease-out;
+  }
 }
 
 @keyframes fadeInLeft {
@@ -116,36 +118,37 @@ body {
   }
 }
 
-.button:link,
-.button:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 1.5rem 4rem;
-  border-radius: 100px;
-  transition: all ease 0.2s;
-  font-size: 1.6rem;
+.button {
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    border-radius: 100px;
+    transition: all ease 0.2s;
+    font-size: 1.6rem;
+    position: relative;
+  }
 
-  position: relative;
-}
+  &:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 0 10px 20px rgba($color-black, 0.2);
+  }
 
-.button:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
+  &:active {
+    transform: translateY(-0.1rem);
+    box-shadow: 0 5px 10px rgba($color-black, 0.2);
+  }
 
-.button:active {
-  transform: translateY(-0.1rem);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
+  &--white {
+    background-color: $color-white;
+    color: $color-gray-dark;
+  }
 
-.button--white {
-  background-color: $color-white;
-  color: $color-gray-dark;
-}
-
-.button--animated {
-  animation: fadeInTop 0.5 ease-out 0.75s;
-  animation-fill-mode: backwards;
+  &--animated {
+    animation: fadeInTop 0.5 ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
 }
 
 @keyframes fadeInTop {

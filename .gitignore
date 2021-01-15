@@ -4,5 +4,6 @@
 # remove node_modules
 /node_modules
 
-# remove css compiled, just using sass
-./css
+### Sass ###
+.sass-cache/
+*.css.map
