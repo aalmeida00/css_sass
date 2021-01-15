@@ -1,0 +1,22 @@
+{
+  "name": "css_sass",
+  "version": "1.0.0",
+  "description": "lp para o North",
+  "main": "index.js",
+  "scripts": {
+     "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aalmeida00/css_sass.git"
+  },
+  "author": "Andre Almeida",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aalmeida00/css_sass/issues"
+  },
+  "homepage": "https://github.com/aalmeida00/css_sass#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
