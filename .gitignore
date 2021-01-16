@@ -1,5 +1,6 @@
 # remove local history
 .history
+.vscode
 
 # remove node_modules
 /node_modules
@@ -7,3 +8,4 @@
 ### Sass ###
 .sass-cache/
 *.css.map
+
