@@ -2,8 +2,8 @@
 .history
 .vscode
 
-# remove node_modules
-/node_modules
+# remove node_modules on natours project
+/Natours/node_modules
 
 ### Sass ###
 .sass-cache/
